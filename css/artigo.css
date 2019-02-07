@@ -1,0 +1,92 @@
+main{
+  width:100%;
+  box-sizing:border-box;
+
+}
+
+
+p{
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-top:1.5em;
+}
+
+p:first{
+  margin-top:0;
+}
+
+.titulo-artigo{
+  font-size: 2.5em;
+  margin:1rem 0;
+  text-align: center;
+}
+
+
+
+@media (max-width: 699px){
+  .menu-lateral{
+      display:none;
+      margin: 0 10%;
+  }
+}
+.artigo{
+  width:80%;
+  margin:auto;
+  padding: 1em;
+}
+
+
+
+
+
+
+
+
+
+/*
+-----------------------  DESIGN PÁGIN WEB -------------------------------
+*/
+
+
+
+@media (min-width: 700px){
+.artigo{
+  float: right;
+  clear:right;
+  width:65%;
+  font-size:1.25rem;
+  line-height: 1.5rem;
+
+  margin-right:10%;
+}
+
+
+.menu-lateral{
+  position:fixed;
+  float:left;
+  clear:left;
+  height:100%;
+  width:20%;
+  background-color:#f0f0f0;
+
+}
+
+.menu-lateral ul{
+  position:absolute;
+  right:5%;
+}
+.menu-lateral li{
+  display:block;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  margin-top:1em;
+}
+
+.menu-lateral li:first{
+    margin-top:0em;
+}
+
+.abre-menu,
+.fecha-menu{
+   display:none;
+}
+}

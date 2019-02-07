@@ -1,0 +1,78 @@
+@font-face{
+    font-family: "anurati";
+    src: url("fonts/anurati.otf") format('opentype');
+
+    font-style: normal;
+    font-weight: normal;
+}
+
+header{
+    background-color: #1768AC;
+    box-sizing: border-box;
+    width:100%;
+
+    padding:1em;
+    postion:fixed;
+    top:0;
+    left:0;
+
+    clear:both;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.titulo-pagina{
+    font-family:"anurati";
+    font-size: 1.5em;
+    letter-spacing: 0.5em;
+    color:#FFFFFF;
+
+    text-align:center;
+
+    text-transform: uppercase;
+
+}
+
+.icone-blog{
+    transform: scale(0.8);
+}
+
+.menu-superior{
+    background-color:#174F7D;
+    width:100%;
+}
+
+.menu-superior li{
+    display:inline-block;
+    font-size:1em;
+
+    padding: 1em 0;
+}
+
+
+
+.link{
+  font-family: "anurati";
+  text-transform: uppercase;
+/*  Os valores abaixo de paddig e min-width
+são de acordo com recomendações da microsoft*/
+  cursor:pointer;
+
+  min-width:50px;
+  min-height:50px;
+  padding:10px;
+
+
+  color: #818181;
+  transition:0.5s;
+
+  letter-spacing:0.2rem;
+}
+
+
+.link:hover{
+  color:#FFFFFF;
+  text-decoration:underline;
+  background-color: #489EE5;
+}
