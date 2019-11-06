@@ -1,78 +1,147 @@
 @font-face{
     font-family: "anurati";
-    src: url("fonts/anurati.otf") format('opentype');
+    src: url("../fonts/anurati.otf") format('opentype');
 
     font-style: normal;
     font-weight: normal;
 }
 
+body{
+  background-color: #efefef;
+}
+
 header{
-    background-color: #1768AC;
-    box-sizing: border-box;
-    width:100%;
+	background-color: #1768AC;
 
-    padding:1em;
-    postion:fixed;
-    top:0;
-    left:0;
+	box-sizing:border-box;
+	width:100%;
+	height: 70px;
 
-    clear:both;
-    display:flex;
-    align-items:center;
-    justify-content: space-between;
+
+	-webkit-box-shadow: 0px 33px 86px -27px rgba(106,109,128,1);
+	-moz-box-shadow: 0px 33px 86px -27px rgba(106,109,128,1);
+	box-shadow: 0px 33px 86px -27px rgba(106,109,128,1);
+
+
+	position:fixed;
+	top:0;
+	left:0;
+
+	padding: 0 5%;
+
+
+	display:flex;
+
+	align-items:center;
+	justify-content: space-between;
+}
+
+    
+h1{
+    font-size:150%;
+    /*padding: 0 15%;*/
+    font-weight:normal;
+}
+
+h2{
+    font-size:24px;
+    padding: 0 15%;
+    margin-top: 1.5em;
+}
+
+p{
+  font-family:  'Arsenal',sans-serif;
+  /*font-size: 18px;*/
+  line-height: 1.5em;
+}
+    
+.logo{
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+}
+
+
+.menu-superior li{
+  display:inline-block;
+  
+}
+
+
+.menu-superior a{
+	text-decoration:none;	
+}
+main{
+  margin-top:70px;
+}
+
+
+.titulo-principal{
+
+    font-family:"anurati";
+   /*font-size: 1.5em;*/
+    letter-spacing: 0.5em;
+    color:#4F4F4F;
+    margin-left: 1.5em;
+    
+
+    text-transform: uppercase;
+}
+
+footer{
+  margin-top:70px;
+  width:100%;
+  padding-left: 1em;
+
+  padding-top: 2em;
+  padding-bottom: 2em;
+
+  color: #353535;
+
+  box-sizing:border-box;
+
+  background-color:#e5e5e5;
 }
 
 .titulo-pagina{
     font-family:"anurati";
-    font-size: 1.5em;
     letter-spacing: 0.5em;
     color:#FFFFFF;
-
+    margin-left: 1.5em;
     text-align:center;
-
     text-transform: uppercase;
-
 }
 
 .icone-blog{
     transform: scale(0.8);
 }
 
-.menu-superior{
-    background-color:#174F7D;
-    width:100%;
-}
-
-.menu-superior li{
-    display:inline-block;
-    font-size:1em;
-
-    padding: 1em 0;
-}
 
 
-
+/*  Os valores abaixo de paddig e min-width
+são de acordo com recomendações da microsoft*/
 .link{
   font-family: "anurati";
   text-transform: uppercase;
-/*  Os valores abaixo de paddig e min-width
-são de acordo com recomendações da microsoft*/
+
   cursor:pointer;
 
   min-width:50px;
-  min-height:50px;
+  min-height:70px;
   padding:10px;
 
-
-  color: #818181;
+  color: #858585;
   transition:0.5s;
 
   letter-spacing:0.2rem;
 }
 
-
 .link:hover{
-  color:#FFFFFF;
   text-decoration:underline;
+  color:#FFFFFF;
   background-color: #489EE5;
+}
+
+.menu{
+  color:#FFFFFF;
 }
