@@ -3,12 +3,12 @@
 
     <head>
         <meta charset="utf-8"/>
-	<meta name="description"
-       		content="A blog about electronics, embedded tecnology and computation"/>
-	<meta http-equiv="author"
-       		content="André Machoski"/>
+	    <meta name="description" content="A blog about electronics, embedded tecnology and computation"/>
+      	<meta http-equiv="author" content="André Machoski"/>
+        <!-- Sites's responsivity, page with the same width of the reader's device -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../css/reset.css"/>
+        <link rel="stylesheet" href="../css/foundation-float.css"/>
         <link rel="stylesheet" href="../css/basico.css"/>
         <link rel="stylesheet" href="../css/artigo.css"/>
         <link rel="stylesheet" href="../fonts/anurati.otf"/>
@@ -16,33 +16,39 @@
 
     </head>
 
+
+
     <body>
+        <!--<?php include("header.html"); ?>-->
 
-        <header class="cabecalho">
-		<!--<button class="abre-menu"></button>
-		<button class="fecha-menu"></button>-->
-		    <div class="logo">
-		      <img class="icone-blog" src="../images/icons/icone-header.ico" alt="ícone do asimblog"/>
-		      <h1 class="titulo-pagina"><a href="home.html" style="text-decoration:none; color:#FFFFFF">Asimblog</a></h1>
-		    </div>
-		    <!--<h1 class="titulo-pagina">Blog</h1>-->
-		
-			
-		    <nav class="menu-superior">
-		      <ul>
-			<li><a class="link menu" alt="posts do site" href="index.html#eletronica">Eletronica</a></li>
-			<li><a class="link menu" alt="livros recomendados" href="index.html#embarcado">Embarcado</a></li>
-			<li><a class="link menu" alt="sobre o site e o autor">Sobre</a></li>
-			<li><a class="link menu" alt="contato">Contato</a></li>
-		      </ul>
-		    </nav>
-		</header>
+        <header id="header-geral">
+
+            <div class="title-bar" data-responsive-toggle="header-desktop" data-hide-for="medium" id="header-mobile">
+                <h1 class="titulo-pagina top-bar-left"><a href="home.html" style="text-decoration:none; color:#FFFFFF">Asimblog</a></h1>
+                <button type="button" data-toggle="header-desktop" class="top-bar-right"><img class="icone-blog" src="../images/icons/icone-header-sandwich.ico" alt="menu sanduíche"></button>
+            </div>
+        
+            <div class="cabecalho" id="header-desktop">
+                <h1 class="titulo-pagina"><a href="home.html" style="text-decoration:none; color:#FFFFFF">Asimblog</a></h1>
+                <div>
+                    <nav class="menu-superior menu-logo">
+                        <ul>
+                            <li><a class="link menu" alt="posts do site" href="index.html#eletronica">Profissional</a></li>
+                            <li><a class="link menu" alt="livros recomendados" href="index.html#embarcado">Pessoal</a></li>
+                            <li><a class="link menu" alt="sobre o site e o autor">Sobre</a></li>
+                        </ul>
+                    </nav>
+                    <div class="logo menu-logo">
+                        <img class="icone-blog" src="../images/icons/icone-header.ico" alt="ícone do asimblog"/>
+                    </div>
+                </div>
+            </div>
+        </header>
 
 
-		
 		<main>
 		  <div class="texto">
-		    <div class="menu-lateral">
+		    <div class="menu-lateral show-for-medium show-for-landscape">
 		      <ul>
 			<li><a alt="Eletronica" href="../ html/eletronica"> <img class="categoria" src="../images/menu-lateral/embarcado.svg">
 					<hr>
@@ -55,15 +61,16 @@
 		    </div>
 
 
-		    <div class='artigo'>
-		     
-			    
+		    <div class='artigo row'>
+
+
 		      <img class="imagem-post" src="../images/ants2.jpg">
-			    
+
 		      <h1 class="titulo-artigo">Computação evolucionária</h1>
-		      
-		      
-		      <p> 
+          <h2 class="subtitulo">Da natureza viemos e para ela retornamos.</h2>
+
+
+		      <p>
 			O vídeo fornece uma maneira poderosa de ajudá-lo a provar seu argumento. Ao clicar em Vídeo Online, você pode colar o código de inserção do vídeo que deseja adicionar. Você também pode digitar uma palavra-chave para pesquisar online o vídeo mais adequado ao seu documento. Para dar ao documento uma aparência profissional, o Word fornece designs de cabeçalho, rodapé, folha de rosto e caixa de texto que se complementam entre si. Por exemplo, você pode adicionar uma folha de rosto, um cabeçalho e uma barra lateral correspondentes. Clique em Inserir e escolha os elementos desejados nas diferentes galerias. Temas e estilos também ajudam a manter seu documento coordenado. Quando você clica em Design e escolhe um novo tema, as images, gráficos e elementos gráficos SmartArt são alterados para corresponder ao novo tema. Quando você aplica estilos, os títulos são alterados para coincidir com o novo tema. Economize tempo no Word com novos botões que são mostrados no local em que você precisa deles.
 		      </p>
 		      <p>
@@ -89,10 +96,10 @@
 		At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
 	      </p>
 		<iframe src="http://maps.google.co.uk/maps?q=moma+new+york&amp;output=embed" scrolling="yes">
-			
+
 			<p>Teste</p>
 		</iframe>
-		
+
 
 		<iframe src="./codigo.html">
 		</iframe>
@@ -100,11 +107,11 @@
               <p>
                 At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
               </p>
-		
+
 	      <h2 id="capitulo_3" class="subtitulo">Teste2</h2>
 
 
-	      <p> 
+	      <p>
                 O vídeo fornece uma maneira poderosa de ajudá-lo a provar seu argumento. Ao clicar em Vídeo Online, você pode colar o código de inserção do vídeo que deseja adicionar. Você também pode digitar uma palavra-chave para pesquisar online o vídeo mais adequado ao seu documento. Para dar ao documento uma aparência profissional, o Word fornece designs de cabeçalho, rodapé, folha de rosto e caixa de texto que se complementam entre si. Por exemplo, você pode adicionar uma folha de rosto, um cabeçalho e uma barra lateral correspondentes. Clique em Inserir e escolha os elementos desejados nas diferentes galerias. Temas e estilos também ajudam a manter seu documento coordenado. Quando você clica em Design e escolhe um novo tema, as images, gráficos e elementos gráficos SmartArt são alterados para corresponder ao novo tema. Quando você aplica estilos, os títulos são alterados para coincidir com o novo tema. Economize tempo no Word com novos botões que são mostrados no local em que você precisa deles.
               </p>
               <p>
@@ -126,11 +133,30 @@
           O autor não se responsabiliza pela aplicação de técnicas e procedimentos descritos.
         </footer>
 
-      <script src="../js/menu-lateral.js"></script>
-      
+
+
     </body>
 
 
-
+    <script src="../js/vendor.js"></script>
+    <script src="../js/foundation.js"></script>
+    <script src="../js/menu-lateral.js"></script>
+    <script src="../js/app.js"></script>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function(){
+    
+            var currentScrollPos = window.pageYOffset;
+    
+            if (prevScrollpos > currentScrollPos){
+    
+                document.getElementById("header-geral").style.top = "0";
+            } else{
+    
+                document.getElementById("header-geral").style.top = "-80px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
 
 </html>

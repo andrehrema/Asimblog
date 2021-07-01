@@ -1,0 +1,42 @@
+<header id="header-pag">
+
+    <div class="title-bar" data-responsive-toggle="header-geral" data-hide-for="medium">
+        <h1 class="titulo-pagina top-bar-left"><a href="home.html" style="text-decoration:none; color:#FFFFFF">Asimblog</a></h1>
+        <button type="button" data-toggle="header-geral" class="top-bar-right"><img class="icone-blog" src="../images/icons/icone-header-sandwich.ico" alt="menu sanduíche"></button>
+    </div>
+
+    <div class="cabecalho" id="header-geral">
+        <h1 class="titulo-pagina"><a href="home.html" style="text-decoration:none; color:#FFFFFF">Asimblog</a></h1>
+        <div>
+            <nav class="menu-superior menu-logo">
+                <ul>
+                    <li><a class="link menu" alt="posts do site" href="index.html#eletronica">Profissional</a></li>
+                    <li><a class="link menu" alt="livros recomendados" href="index.html#embarcado">Pessoal</a></li>
+                    <li><a class="link menu" alt="sobre o site e o autor">Sobre</a></li>
+                </ul>
+            </nav>
+            <div class="logo menu-logo">
+                <img class="icone-blog" src="../images/icons/icone-header.ico" alt="ícone do asimblog"/>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<script>
+	var prevScrollpos = window.pageYOffset;
+	window.onscroll = function(){
+
+		var currentScrollPos = window.pageYOffset;
+
+		if (prevScrollpos > currentScrollPos){
+
+			document.getElementById("header-pag").style.top = "0";
+		} else{
+
+			document.getElementById("header-pag").style.top = "-80px";
+		}
+
+        prevScrollpos = currentScrollPos;
+	}
+</script>

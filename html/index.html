@@ -3,17 +3,20 @@
 
     <head>
         <meta charset="utf-8"/>
-	
-	
-        <meta charset="utf-8"/>                                                                    
-        <meta name="description"                                                                   
-                content="A blog about electronics, embedded tecnology and computation"/>           
-        <meta http-equiv="author"                                                                  
-                content="André Machoski"/>                                            
+
+
+        <meta charset="utf-8"/>
+        <meta name="description"
+                content="A blog about electronics, embedded tecnology and computation"/>
+        <meta http-equiv="author"
+                content="André Machoski"/>
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../css/reset.css"/>
+        <link rel="stylesheet" href="../css/foundation-float.css"/>
         <link rel="stylesheet" href="../css/basico.css"/>
+        <link rel="stylesheet" href="../css/index.css"/>
+
 	<!--<link rel="stylesheet" href="../css/artigo.css"/>-->
         <link rel="stylesheet" href="../fonts/anurati.otf"/>
 	<title>Asimblog</title>
@@ -21,40 +24,171 @@
     </head>
 
     <body>
-	
+        <!--<?php include("header.html"); ?>-->
 
-	<header class="cabecalho">
-            <!--<button class="abre-menu"></button>
-	  	<button class="fecha-menu"></button>-->
-            <div class="logo">
-              <img class="icone-blog" src="../images/icons/icone-header.ico" alt="ícone do asimblog"/>
-              <h1 class="titulo-pagina"><a href="home.html" style="text-decoration:none; color:#FFFFFF">Asimblog</a></h1>
-	    </div>
-            <h1 class="titulo-pagina">Blog</h1>
+        <header>
 
+            <div class="title-bar" data-responsive-toggle="header-desktop" data-hide-for="medium" id="header-mobile">
+                <h1 class="titulo-pagina top-bar-left"><a href="home.html" style="text-decoration:none; color:#FFFFFF">Asimblog</a></h1>
+                <button type="button" data-toggle="header-desktop" class="top-bar-right"><img class="icone-blog" src="../images/icons/icone-header-sandwich.ico" alt="menu sanduíche"></button>
+            </div>
+        
+            <div class="cabecalho" id="header-desktop">
+                <h1 class="titulo-pagina"><a href="home.html" style="text-decoration:none; color:#FFFFFF">Asimblog</a></h1>
+                <div>
+                    <nav class="menu-superior menu-logo">
+                        <ul>
+                            <li><a class="link menu" alt="posts do site" href="index.html#eletronica">Profissional</a></li>
+                            <li><a class="link menu" alt="livros recomendados" href="index.html#embarcado">Pessoal</a></li>
+                            <li><a class="link menu" alt="sobre o site e o autor">Sobre</a></li>
+                        </ul>
+                    </nav>
+                    <div class="logo menu-logo">
+                        <img class="icone-blog" src="../images/icons/icone-header.ico" alt="ícone do asimblog"/>
+                    </div>
+                </div>
+            </div>
+        </header>
 
-            <nav class="menu-superior">
-              <ul>
-                <li><a class="link menu" alt="posts do site" href="#eletronica">Eletronica</a></li>
-
-                <li><a class="link menu" alt="livros recomendados" href="#embarcado">Embarcado</a></li>
-                <li><a class="link menu" alt="sobre o site e o autor">Sobre</a></li>
-                <li><a class="link menu" alt="contato">Contato</a></li>
-              </ul>
-            </nav>
-	    </header>
-	
         <main>
+            <div class="row" id="professional">
+                <div class="small-12 medium-6 large-4 column">
+                        <img data-interchange="[../images/test_initial_menu/hw1-small.jpeg, small], [../images/test_initial_menu/hw1-medium.jpeg, medium], [../images/test_initial_menu/hw1-large.jpeg, large]">
+                        <div class="post-thumbnail-text">
+                            <div class="post-thumbnail-title">Hardware 1</div>
+                            <p>Breve descrição sobre o que é o capitulo, utilizando um 5w2h básico</p>
+                        </div>
+    <!--
+                    <div class="post-thumbnail">
+                        <img class="post-thumbnail-img" src="../images/test_initial_menu/hw1.jpeg">
+                        <div class="post-thumbnail-text">
+                            <h2>Hardware 1</h2>
+                            <p>Breve descrição sobre o que é o capitulo, utilizando um 5w2h básico</p>
+                        </div>
+                    </div>
+    -->
+                </div>
+                <div class="small-12 medium-6 large-4 column">
+                        <img data-interchange="[../images/test_initial_menu/hw2-small.jpeg, small], [../images/test_initial_menu/hw2-medium.jpeg, medium], [../images/test_initial_menu/hw2-large.jpeg, large]">
+                        <div class="post-thumbnail-text">
+                            <div class="post-thumbnail-title">Hardware 2</div>
+                            <p>Breve descrição sobre o que é o capitulo, utilizando um 5w2h básico</p>
+                        </div>
+                </div>
+    <!--
+                    <div class="post-thumbnail">
+                        <img class="post-thumbnail-img" src="../images/test_initial_menu/hw2.jpeg">
+                        <div class="post-thumbnail-text"></div>
+                            <h2>Hardware 2</h2>
+                            <p>Breve descrição sobre o que é o capitulo, utilizando um 5w2h básico</p>
+                        </div>
+                    </div>
 
-	<!--<img style="opacity:0.85" id="eletronica" src="../images/areas/eletronica/medium.jpg">
-	
-	<div class="assunto"> 
-	
-		<img id="embarcado" src="../images/areas/embarcado/medium.jpg">
-		
-	</div>-->
-	
-	</main>
+                </div>
+    -->
+                <!-- The last element of a row in foundation framework receive float = right -->
+                <div class="small-12 medium-6 large-4 column">
+                    <img data-interchange="[../images/test_initial_menu/hw3-small.jpg, small], [../images/test_initial_menu/hw3-medium.jpg, medium], [../images/test_initial_menu/hw3-large.jpg, large]">
+                    <div class="post-thumbnail-text">
+                        <div class="post-thumbnail-title">Hardware 3</div>
+                        <p>Breve descrição sobre o que é o capitulo, utilizando um 5w2h básico</p>
+                    </div>
+                </div>
+            <!--
+                    <div class="post-thumbnail">
+                        <img class="post-thumbnail-img" src="../images/test_initial_menu/hw3.jpeg">
+                        <div class="post-thumbnail-text">
+                            <h2>Hardware 3</h2>
+                            <p>Breve descrição sobre o que é o capitulo, utilizando um 5w2h básico</p>
+                        </div>
+                    </div>
+    -->
+            </div>
+
+
+            <div class="row" id="professional">
+                <div class="small-12 medium-6 large-4 column">
+                        <img data-interchange="[../images/test_initial_menu/hw1-small.jpeg, small], [../images/test_initial_menu/hw1-medium.jpeg, medium], [../images/test_initial_menu/hw1-large.jpeg, large]">
+                        <div class="post-thumbnail-text">
+                            <div class="post-thumbnail-title">Hardware 1</div>
+                            <p>Breve descrição sobre o que é o capitulo, utilizando um 5w2h básico</p>
+                        </div>
+    <!--
+                    <div class="post-thumbnail">
+                        <img class="post-thumbnail-img" src="../images/test_initial_menu/hw1.jpeg">
+                        <div class="post-thumbnail-text">
+                            <h2>Hardware 1</h2>
+                            <p>Breve descrição sobre o que é o capitulo, utilizando um 5w2h básico</p>
+                        </div>
+                    </div>
+    -->
+                </div>
+                <div class="small-12 medium-6 large-4 column">
+                        <img data-interchange="[../images/test_initial_menu/hw2-small.jpeg, small], [../images/test_initial_menu/hw2-medium.jpeg, medium], [../images/test_initial_menu/hw2-large.jpeg, large]">
+                        <div class="post-thumbnail-text">
+                            <div class="post-thumbnail-title">Hardware 2</div>
+                            <p>Breve descrição sobre o que é o capitulo, utilizando um 5w2h básico</p>
+                        </div>
+                </div>
+    <!--
+                    <div class="post-thumbnail">
+                        <img class="post-thumbnail-img" src="../images/test_initial_menu/hw2.jpeg">
+                        <div class="post-thumbnail-text"></div>
+                            <h2>Hardware 2</h2>
+                            <p>Breve descrição sobre o que é o capitulo, utilizando um 5w2h básico</p>
+                        </div>
+                    </div>
+
+                </div>
+    -->
+                <!-- The last element of a row in foundation framework receive float = right -->
+                <div class="small-12 medium-6 large-4 column">
+                    <img data-interchange="[../images/test_initial_menu/hw3-small.jpg, small], [../images/test_initial_menu/hw3-medium.jpg, medium], [../images/test_initial_menu/hw3-large.jpg, large]">
+                    <div class="post-thumbnail-text">
+                        <div class="post-thumbnail-title">Hardware 3</div>
+                        <p>Breve descrição sobre o que é o capitulo, utilizando um 5w2h básico</p>
+                    </div>
+                </div>
+            <!--
+                    <div class="post-thumbnail">
+                        <img class="post-thumbnail-img" src="../images/test_initial_menu/hw3.jpeg">
+                        <div class="post-thumbnail-text">
+                            <h2>Hardware 3</h2>
+                            <p>Breve descrição sobre o que é o capitulo, utilizando um 5w2h básico</p>
+                        </div>
+                    </div>
+    -->
+            </div>
+
+            <div class="about">
+                <p class="description"> Formado em engenharia elétrica, atua como analista de sistema em projetos envolvendo tecnologia linux, linguagens de médio nível e scripts.<br>
+                    Tive experiências no período da faculdade com VHDL e redes broadband.<br>
+                    Em meu tempo livre gosto de livros com temática filosófica e timidamente ingresso na prática de calistenia.
+                </p>
+            </div>
+
+        <!--<img style="opacity:0.85" id="eletronica" src="../images/areas/eletronica/medium.jpg">
+
+        <div class="assunto">
+
+            <img id="embarcado" src="../images/areas/embarcado/medium.jpg">
+
+        </div>-->
+
+        </main>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/foundation.js"></script>
+    <script src="../js/foundation.core.js"></script>
+    <script src="../js/foundation.interchange.js"></script>
+    <script src="../js/foundation.util.mediaQuery.js"></script>
+    <!-- Other JS plugins can be included here -->
+
+    <script>
+        $(document).foundation();
+    </script>
 
     </body>
+
+
 </html>
